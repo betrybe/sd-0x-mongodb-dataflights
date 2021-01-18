@@ -34,6 +34,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - Usar filtros na busca
 - Deletar documentos conforme filtro
 - Contar documentos compreendidos nos filtros pedidos
+- Inserir documentos no banco
 
 # Entregáveis
 
