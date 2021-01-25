@@ -3,22 +3,10 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  eslint:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1.4.4
-        with:
-          node-version: '12'
-      - name: ESLint
-        uses: betrybe/eslint-linter-action@v2.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
   evaluator_job:
     name: Evaluator Job
     runs-on: ubuntu-18.04
-    needs: eslint
     services:
       mongodb:
         image: mongo
@@ -28,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: MongoDB Query Evaluator Step
-        uses: betrybe/mongodb-query-evaluator-action@v2.2
+        uses: betrybe/mongodb-query-evaluator-action@prepara-avaliador-para-v3
         id: evaluator
         env:
           DBNAME: 'dataFlights'
