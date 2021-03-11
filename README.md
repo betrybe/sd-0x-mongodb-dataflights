@@ -215,7 +215,7 @@ Esse script passará por **todos os desafios** e imprimirá um relatório indica
 
 Durante a execução do projeto, utilize _queries_ do mongo para retornar os valores pedidos nos requisitos.
 
-Você deve criar uma pasta chamada `challenges`, contendo dentro dela arquivos no formato `desafioX.js` onde `X` é o número do requisito.
+Você deve criar na raíz do projeto uma pasta chamada `challenges`, contendo dentro dela arquivos no formato `desafioX.js` onde `X` é o número do requisito.
 
 Dentro dos arquivos `desafioX.js`, **crie uma query** ou mais (se necessário), para retornar o que o requisito pede. 
 
