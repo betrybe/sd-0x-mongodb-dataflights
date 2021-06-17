@@ -195,6 +195,12 @@ Para executar localmente os testes, é preciso escrever o seguinte no seu termin
 
 Esse script passará por **todos os desafios** e imprimirá um relatório indicando se passou ou não para cada desafio. Como a execução do script **envolve restauração da base de dados `dataFlights`** de um teste para outro, recomenda-se esperar pela sua execução completa.
 
+Para executar somente o teste de um desafio, execute o comando abaixo, substituindo N pelo númedo do desafio
+
+```sh
+./scripts/evaluate.sh desafioN
+```
+
 ---
 
 # Requisitos do projeto
